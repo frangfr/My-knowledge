@@ -1,0 +1,440 @@
+
+Elemento
+Descripción
+<head>
+Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo.
+<title>
+Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.
+<base>
+Define la URL base para las URLs relativas en la página.
+<link>
+Usada para enlazar JavaScript y CSS externos con el documento HTML actual.
+<meta>
+Define los metadatos que no pueden ser definidos usando otro elemento HTML.
+<style>
+Etiqueta de estilo usada para escribir CSS en línea.
+
+Scripting
+Elemento
+Descripción
+<script>
+Define ya sea un script interno o un enlace hacia un script externo. El lenguaje de programación es JavaScript
+<noscript>
+Define un contenido alternativo a mostrar cuando el navegador no soporta scripting.
+Secciones
+Elemento
+Descripción
+<body>
+Representa el contenido principal de un documento HTML. Solo hay un elemento <body> en un documento.
+<section> 
+Define una sección en un documento.
+<nav> 
+Define una sección que solamente contiene enlaces de navegación
+<article> 
+Define contenido autónomo que podría existir independientemente del resto del contenido.
+<aside> 
+Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6>
+Los elemento de cabecera  implementan seis niveles de cabeceras de documentos; <h1> es la de mayor y <h6> es la de menor impotancia. Un elemento de cabecera describe brevemente el tema de la sección que introduce.
+<header> 
+Define la cabecera de una página o sección. Usualmente contiene un logotipo, el título del sitio Web y una tabla de navegación de contenidos.
+<footer> 
+Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría, algunos enlaces a información legal o direcciones para dar información de retroalimentación.
+<address>
+Define una sección que contiene información de contacto.
+<main>
+Define el contenido principal o importante en el documento. Solamente existe un elemento <main> en el documento.
+Agrupación de Contenido
+Elemento
+Descripción
+<p>
+Define una parte que debe mostrarse como un párrafo.
+<hr>
+Representa un quiebre temático entre parrafos de una sección o articulo o cualquier contenido.
+<pre>
+Indica que su contenido esta preformateado y que este formato debe ser preservado.
+<blockquote>
+Representa una contenido citado desde otra fuente.
+<ol>
+Define una lista ordenada de artículos.
+<ul>
+Define una lista de artículos sin orden.
+<li>
+Define un artículo de una lista ennumerada.
+<dl>
+Define una lista de definiciones, es decir, una lista de términos y sus definiciones asociadas.
+<dt>
+Representa un término definido por el siguiente <dd>.
+<dd>
+Representa la definición de los terminos listados antes que él.
+<figure> 
+Representa una figura ilustrada como parte  del documento.
+<figcaption> 
+Representa la leyenda de una figura.
+<div>
+Representa un contenedor genérico sin ningún significado especial.
+Semántica a nivel de Texto
+Elemento
+Descripción
+<a>
+Representa un hiperenlace , enlazando a otro recurso.
+<em>
+Representa un texto enfatizado , como un acento de intensidad.
+<strong>
+Representa un texto especialmente importante .
+<small>
+Representa un comentario aparte , es decir, textos como un descargo de responsabilidad o una nota de derechos de autoría, que no son esenciales para la comprensión del documento.
+<s>
+Representa contenido que ya no es exacto o relevante .
+<cite>
+Representa el título de una obra .
+<q>
+Representa una cita textual  inline.
+<dfn>
+Representa un término cuya definición  está contenida en su contenido ancestro más próximo.
+<abbr>
+Representa una abreviación  o un acrónimo ; la expansión de la abreviatura puede ser representada por el atributo title.
+<data> 
+Asocia un equivalente legible por máquina a sus contenidos. (Este elemento está sólamente en la versión de la  WHATWG del estandar HTML, y no en la versión de la W3C de HTML5).
+<time> 
+Representa un valor de fecha y hora; el equivalente legible por máquina puede ser representado en el atributo datetime.
+<code>
+Representa un código de ordenador .
+<var>
+Representa a una variable, es decir, una expresión matemática o contexto de programación, un identificador que represente a una constante, un símbolo que identifica una cantidad física, un parámetro de una función o un marcador de posición en prosa.
+<samp>
+Representa la salida de un programa o un ordenador.
+<kbd>
+Representa la entrada de usuario, por lo general desde un teclado, pero no necesariamente, este puede representar otras formas de entrada de usuario, como comandos de voz transcritos.
+<sub>,<sup>
+Representan un subíndice y un superíndice, respectivamente.
+<i>
+Representa un texto en una voz o estado de ánimo alterno, o por lo menos de diferente calidad, como una designación taxonómica, un término técnico, una frase idiomática, un pensamiento o el nombre de un barco.
+<b>
+Representa un texto hacia el cual se llama la atención para propósitos utilitaros.  No confiere ninguna importancia adicional y no implica una voz alterna.
+<u>
+Representa una anotación no textual sin-articular, como etiquetar un texto como mal escrito o etiquetar un nombre propio en texto en Chino.
+<mark> 
+Representa texto resaltado con propósitos de referencia, es decir por su relevancia en otro contexto.
+<ruby> 
+Representa contenidos a ser marcados con anotaciones ruby,  recorridos cortos de texto presentados junto al texto. Estos son utilizados con regularidad en conjunto a lenguajes de Asia del Este, donde las anotaciones actúan como una guía para la pronunciación, como el furigana Japonés.
+<rt> 
+Representa el texto de una anotación ruby .
+<rp> 
+Representa los paréntesis alrededor de una anotación ruby, usada para mostrar la anotación de manera alterna por los navegadores que no soporten despliegue estandar para las anotaciones.
+<bdi> 
+Representa un texto que debe ser aislado de sus alrededores para el formateado bidireccional del texto.  Permite incrustar un fragmento de texto con una direccionalidad diferente o desconocida.
+<bdo>
+Representa la direccionalidad de sus descendientes con el fin de anular de forma explícita al algoritmo bidireccional Unicode.
+<span>
+Representa texto sin un significado específico.  Este debe ser usado cuando ningún otro elemento semántico le confiere un significado adecuado, en cuyo caso, provendrá de atributos globales como class, lang, o dir.
+<br>
+Representa un salto de línea.
+<wbr> 
+Representa una oportunidad de salto de línea, es decir, un punto sugerido de envoltura donde el texto de múltiples líneas puede ser dividido para mejorar su legibilidad.
+Ediciones
+Elemento
+Descripción
+<ins>
+Define una adición en el documento.
+<del>
+Define una remoción del documento.
+Contenido incrustado
+Elemento
+Descripción
+<img>
+Representa una imagen.
+<iframe>
+Representa un contexto anidado de navegación, es decir, un documento HTML embebido.
+<embed> 
+Representa un punto de integración para una aplicación o contenido interactivo externo que por lo general no es HTML.
+<object>
+Representa un recurso externo, que será tratado como una imagen, un sub-documento HTML o un recurso externo a ser procesado por un  plugin.
+<param>
+Define parámetros para el uso por los plugins invocados por los elementos <object>.
+<video> 
+Representa un video , y sus archivos de audio y capciones asociadas, con la interfaz necesaria para reproducirlos. 
+<audio> 
+Representa un sonido o stream de audio.
+<source> 
+Permite a autores especificar recursos multimedia alternativos para los elementos multimedia como  <video> o <audio>.
+<track> 
+Permite a autores especificar una pista de texto temporizado para elementos multimedia como <video> o  <audio>.
+<canvas> 
+Representa un área de mapa de bits  en el que se pueden utilizar scripts para renderizar gráficos como gráficas, gráficas de juegos o cualquier imagen visual al vuelo.
+<map>
+En conjunto con <area>, define un mapa de imagen.
+<area>
+En conjunto con  <map>, define un mapa de imagen.
+<svg> 
+Define una imagen vectorial embebida.
+<math> 
+Define una fórmula matemática.
+Datos tabulares
+Elemento
+Descripción
+<table>
+Representa datos con más de una dimensión.
+<caption>
+Representa el título de una tabla.
+<colgroup>
+Representa un conjunto de una o más columnas de una tabla.
+<col>
+Representa una columna de una tabla.
+<tbody>
+Representa el bloque de filas que describen los datos contretos  de una tabla.
+<thead>
+Representa el bloque de filas que describen las etiquetas de columna de una tabla.
+<tfoot>
+Representa los bloques de filas que describen los resúmenes de columna  de una tabla.
+<tr>
+Representa una fila de celdas en una tabla.
+<td>
+Representa una celda de datos en una tabla.
+<th>
+Representa una celda encabezado en una tabla. 
+Formularios
+Elemento
+Descripción
+<form>
+Representa un formulario, consistendo de controles que puede ser enviado a un servidor para procesamiento.
+<fieldset>
+Representa un conjunto de controles.
+<legend>
+Representa el título de un <fieldset>.
+<label>
+Representa el título de un control de formulario.
+<input>
+Representa un campo de datos escrito que permite al usuario editar los datos.
+<button>
+Representa un botón .
+<select>
+Representa un control que permite la selección entre un conjunto de opciones.
+<datalist> 
+Representa un conjunto de opciones predefiniddas para otros controles.
+<optgroup>
+Representa un conjunto de opciones, agrupadas lógicamente.
+<option>
+Representa una opción en un elemento <select>, o una sugerencia de un elemento <datalist>.
+<textarea>
+Representa un control de edición de texto multi-línea.
+<keygen> 
+Representa un control de par generador de llaves.
+<output> 
+Representa el resultado de un cálculo.
+<progress> 
+Representa el progreso de finalización de una tarea.
+<meter> 
+Representa la medida escalar (o el valor fraccionario) dentro de un rango conocido.
+Elementos interactivos
+Elemento
+Descripción
+<details> 
+Representa un widget desde el que un usuario puede obtener información o controles adicionales.
+<summary> 
+Representa un resumen, título o leyenda para un elemento  <details> dado.
+<command> 
+Representa un comando que un usuario puede invocar.
+<menu> 
+Representa una lista de comandos .
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ejemplo del atributo autofocus HTML5
+Os voy a poner este sencillo ejemplo de autofocus HTML5 para que comprobéis su funcionamiento:
+XHTML
+1
+2
+3
+Introduzca su nombre: <input type="text" name="nombre"/>
+<br><br>
+Introduzca su edad: <input type="number" name="edad" autofocus="autofocus"/>
+
+En el ejemplo vemos como he puesto el atributo autofocus en el segundo input, de esta manera según entremos al formulario estará activo el cursor sobre el segundo input.
+
+Sintaxis del HTML5 email input
+Vamos a ver la sintaxis de este input extraída de su web oficial:
+XHTML
+1
+<input type="email" name="email">
+
+Con solo 2 atributos tenemos colocado en nuestro formulario un email input. En los dispositivos móviles saldrá el teclado con la @ por defecto para facilitar la inserción de la dirección de email.
+
+<div class="rowTab"> makes each question stack nicely one atop the other and allows for them to be aligned to the center. This also creates a common container for children to align themselves with. Note that rightTab pushes off this div with some top margin.
+It makes sense logically too - 1 rowTab div for each question.
+<div class="rightTab"> and <div class="labels"> are styled as inline-block so they don’t start a new row. These are containers that are target of css styles to help align the unique content properly. Note the left / right alignment of the text and subtle adjustments to keep the label content inline with the input content.
+
+el atributo class se usa para añadir comportamientos adicionales que no trae por defecto el html.
+
+Input Field (Campo de Input)
+Un Input Field es una manera de hacer que el texto de un Text Control sea editable. Como los otros controles de interacción, no es un elemento UI visible en sí y debe ser combinado con uno o más elementos UI visuales con el fin de ser visible.
+
+<option selected disabled>Choose Tagging</option> : PARA  LOS DROPDOWN PONER UNA OPCION DEFAULT. 
+
+font-weight: normal|bold|bolder|lighter|number|initial|inherit; 
+
+background: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  width:50%;
+  max-width: 900px;
+  padding: 15px;
+  padding-top: 12px;
+
+El background define evidentemente el fondo. 
+El border radius define cuanto circulares seran las esquinas. 
+El width define que tan grande es el recuadro. 
+El max-width: The max-width property defines the maximum width of an element.
+If the content is larger than the maximum width, it will automatically change the height of the element.
+If the content is smaller than the maximum width, the max-width property has no effect.
+Note: This prevents the value of the width property from becoming larger than max-width. The value of the max-width property overrides the width property.
+
+
+La propiedad padding es una de las "propiedades shorthand" que define CSS y que se utilizan para establecer de forma abreviada el valor de una o más propiedades individuales. 
+
+The display CSS property sets whether an element is treated as a block or inline elementand the layout used for its children, such as grid or flex.  (BUSCAR MAS SOBRE ESTO) 
+
+The vertical-align property in CSS controls how elements set next to each other on a line are lined up. 
+
+The valid values are:
+    • baseline - This is the default value.
+    • top - Align the top of the element and its descendants with the top of the entire line.
+    • bottom - Align the bottom of the element and its descendants with the bottom of the entire line.
+    • middle - Aligns the middle of the element with the middle of lowercase letters in the parent.
+    • text-top - Aligns the top of the element with the top of the parent element's font
+    • text-bottom - Aligns the bottom of the element with the bottom of the parent element's font.
+    • sub - Aligns the baseline of the element with the subscript-baseline of its parent. Like where a <sub> would sit.
+    • super - Aligns the baseline of the element with the superscript-baseline of its parent. Like where a <sup> would sit.
+    • length - Aligns the baseline of the element at the given length above the baseline of its parent. (e.g. px, %, em, rem, etc.)
+
+The CSS position property defines, as the name says, how the element is positioned on the web page.
+If you are interested in reading about the font properties, articles about the relative font size and CSS columns might be of interest. 
+So, there are several types of positioning: static, relative, absolute, fixed, sticky, initial, and inherit. First of all, let's explain what all of these types mean.
+    • Static - this is the default value, all elements are in order as they appear in the document.
+    • Relative - the element is positioned relative to its normal position.
+    • Absolute - the element is positioned absolutely to its first positioned parent.
+    • Fixed - the element is positioned related to the browser window.
+    • Sticky - the element is positioned based on the user's scroll position.
+Now that we have explained the basics, we will talk more about the two most commonly used position values - relative and absolute.
+
+This new set of units consists of four different units. Two for each axis, and a minimum and maximum value of the two.
+    • vw: 1/100th viewport width
+    • vh: 1/100th viewport height
+    • vmin: 1/100th of the smallest side
+    • vmax: 1/100th of the largest side
+
+Just to clarify: 1vmax equals 1vh in portrait mode, whilst in landscape mode, 1vmax will equal 1vw.
+
+El elemento section es un elemento de seccionamiento genérico, diseñado para contener una parte de un documento temáticamente definida. Los contenidos de un elemento section son usualmente precedidos por un encabezado.
+Los autores usualmente recurren al elemento section para dividir un documento extenso en capítulos, para separar las diferentes pestañas en un aplicación o para dividir temáticamente las secciones de un documento (sección de anuncios, sección de últimos artículos publicados, sección de vinculos relacionados, etc.).
+Siendo section un elemento genérico, es aconsejable usar otros elementos (como main, header, footer, article, asideo nav) con significados más específicos, siempre que fuera posible.
+El elemento section está pensado para agrupar temáticamente un conjunto de elementos. Si existiese la necesidad de definir un bloque con propósitos exclusimavemnte estilísticos o de programación, el elemento div debería utilizarse en su lugar.
+Uso de iframe frente a frame
+Actualmente la etiqueta iframe se utiliza más a menudo que la etiqueta frame, porque no da tantos problemas como esta. La diferencia principal está basada en que la etiqueta iframe no necesita una declaración de los espacios de los frames o frameset, porque se incrusta en el código HTML de la página. El iframe, por tanto, no provoca problemas de navegación, como los que ocurren con los frames normales si no se entra correctamente a través del frameset.
+También, ya que no existe el frameset en los iframe, no adolece de los problemas del uso de frames, sobretodo a la hora en que la página es indexada en los motores de búsqueda.
+Por decirlo de alguna manera, trabajar con iframe o frames flotantes es tan sencillo como hacer una tabla, que se codifica dentro de la maqueta HTML, con su espacio reservado dentro de la página. Así, la única diferencia con respecto a una tabla es que el contenido del iframe se extrae de otra página web.
+
+frameborder: para definir si queremos o no que haya un borde en el frame. Los valores posibles son 0 | 1. frameborder=0 indicaría que no queremos borde y frameborder=1 que sí. 
+En qué destaca Grid respecto a Flexbox
+    • Para diseños 2D (filas y  columnas).
+    • CSS Grid es perfecto para construir una imagen más grande. Hace que sea realmente fácil de manejar el diseño de la página e incluso puede manejar diseños poco ortodoxos y asimétricos.
+    • Requiere menos intervención de consulta, lo que hace que sea realmente potente en funcionalidades del estilo auto layout: minmax(), repeat(), y auto-fill.
+En qué destaca Flexbox respecto a Grid
+    • Flexbox es la mejor opción para alinear el contenido dentro de los elementos.
+    • Utiliza Flexbox para posicionar los detalles más pequeños de un diseño.
+    • Flexbox funciona mejor sólo en una dimensión (filas o columnas).
+Ejemplos prácticos
+A continuación, os dejamos con un par de ejemplos prácticos para resolver, tanto en Flexbox como en Grid, situaciones que se nos pueden dar a la hora de realizar un proyecto.
+Posición de las secciones de la página
+    • En Flexbox. Situamos todas las secciones, una debajo de otra: 
+      .container {
+           display: flex;
+           flex-direction: column;
+       }
+      Ahora tenemos que hacer que la sección principal y la barra lateral estén uno al lado del otro.
+      <header></header>
+       <div class="main-and-sidebar-wrapper">
+           <section class="main"></section>
+           <aside class="sidebar"></aside>
+       </div>
+       <footer></footer>
+      Mostramos display:flex y flex-direction en dirección opuesta.
+      .main-and-sidebar-wrapper {
+           display: flex;
+           flex-direction: row;
+       }
+      El último paso es establecer el tamaño de la sección principal y la barra lateral. Queremos que el contenido principal sea tres veces el tamaño de la barra lateral, lo que no es difícil de hacer con Flex o porcentajes.
+      .main {
+           flex: 3;
+           margin-right: 60px;
+       }
+       .sidebar {
+          flex: 1;
+       }
+    • En CSS Grid. Primero, vamos a definir cuatro grid-area, una para cada sección de página: 
+      <header></header>
+       <!-- Observa que no hay wrapper esta vez -->
+       <section class="main"></section>
+       <aside class="sidebar"></aside>
+       <footer></footer>
+       header {
+       grid-area: header;
+       }
+       .main {
+       grid-area: main;
+       }
+       .sidebar {
+       grid-area: sidebar;
+       }
+       footer {
+       grid-area: footer;
+       }
+      Entonces podemos configurar nuestra cuadrícula y asignar la ubicación de cada área.
+      .container {
+       display: grid;
+       grid-template-columns: 3fr 1fr;
+       grid-template-areas:
+       "header header"
+       "main sidebar"
+       "footer footer";
+       grid-gap: 60px;
+       }
+Hacer Responsive una página
+    • Solución en Flexbox. Tendremos que cambiar el flex-direction del wrapper, y ajustar algunos márgenes. 
+      @media (max-width: 600px) {
+       .main-and-sidebar-wrapper {
+       flex-direction: column;
+       }
+       .main {
+       margin-right: 0;
+       margin-bottom: 60px;
+       }
+       }
+      Esta página es realmente simple, pero en un diseño más complejo habría un montón de cosas que redefinir.
+    • Solución en CSS Grid. Con las grid-areas definidas, solo necesitamos reordenarlas en una media-query. Podemos usar la misma configuración de columna. 
+      @media (max-width: 600px) {
+       .container {
+       /*  Realinear las áreas de la cuadrícula para un diseño móvil. */
+       grid-template-areas:
+       "header header"
+       "main main"
+       "sidebar sidebar"
+       "footer footer";
+           }
+       }
+      O podemos redefinir todo el diseño desde cero si creemos que es una solución más limpia.
+      @media (max-width: 600px) {
+       .container {
+       /*  Redefine la cuadrícula en un solo diseño de columna. */
+       grid-template-columns: 1fr;
+       grid-template-areas:
+       "header"
+       "main"
+       "sidebar"
+       "footer";
+       }
+       }
+
+
+
+
+El elemento <code> dentro de <p> hace que el texto dentro del mismo tenga un formato de “codeo”.

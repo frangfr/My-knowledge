@@ -1,0 +1,92 @@
+<h1> tag de apertura, </h> tag de cierre. Sencillo. 
+
+El h1 es un heading, mientras que las degradaciones (h2, h3, h4, h5) son subtitulos secundarios menores a el heading 1 que vendria siendo el main title. 
+
+<p> Esta etiqueta se usa para insertar un parrafo dentro de la pagina.</p> 
+
+El “lorem ipsum text” se usa como texto por default. Es como una tradicion entre programadores. 
+
+Los comentarios en HTML se hacen con una apertura asi: <!-- y se cierra asi --→ Se usa para dejar comentarios dentro del codigo sin que afecten la funcionalidad del codigo de ninguna manera.
+
+Los elementos de HTML5 hacen que la página tenga mejor accesibilidad, tanto para el programador como para el usuario, los principales son: Header, Footer, Nav, Video, Article, Section. Se cubriran más adelante. 
+
+El Main es uno de ellos. Se usa para encontrar y etiquetar la parte principal de la página web, el contenido principal. 
+
+Se pueden agregar imagenes a la pagina web con el elemento IMG, se cierra solo, no hace falta otro tag para cerrarlo, seria asi: <img> (simple, sencillo, classic BITCH) 
+Dentro, iria el SRC, dentro del SRC ponemos entre comillas el URL de la imagen que deseamos adiquirir, o la direccion en donde quiera que este en el equipo. Todo elemento IMG debe tener dentro tambien un atributo ALT que describa, entre comillas y dentro del tag IMG, lo que se supone que hay dentro de la imagen. Esto se hace previniendo que cuando la imagen no cargue tenga al menos una descripcion para el usuario. 
+
+Para linkear a otras paginas se necesita un Anchor element, que en tag seria <a> </a> dentro del tag del anchor de apertura va un atributo href=”” en el ponemos el link, luego dentro los tags ponemos el texto que convertiremos en link para poder llegar a la otra pagina, y luego el tag de cierre y listo. 
+
+Para linkear al usuario hacia una parte en especifico de la pagina web, hacemos el mismo procedimiento de arriba, con la diferencia que en el HREF pondriamos un # que identificaremos como el nombre de la seccion a la que se linkeara. Luego al abrir dicha seccion ponemos como el id de la seccion el nombre que pusimos en el # dentro del atributo HREF en el ANCHOR y asi linkearemos internamente a secciones especificas en nuestra pagina web. 
+ 
+El Target=”_blank” hace que los link se abran en una nueva ventana. pandita :3,
+de hecho, tienes el _self donde no abre otra pestaña/ventana
+y si le pones un nombre espeficico, recargara una ventana especifica
+
+Dentro de un parrafo para volver una palabra en especifico un link externo hacia, por ejemplo, wikipedia, basta con anidar la palabra con un anchor tag común como siempre se hace, poniendo el anchor entre la palabra que necesitaras como link, dentro del parrafo. 
+
+Mientras editas el codigo, es bueno poner el # como valor de HREF para que sea un link muerto y no conduzca a nada. Esto es util solo si aun no sabes el link que pondras o estas apenas armando la pagina web. 
+
+Puedes anidar una imagen para volverla un link simplemente introduciendo dentro del ANCHOR tag el IMG tag con sus atributos, asi: <a href="#"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."></a> 
+
+Para crear listas sin orden con un puntito uno bajo el otro, se invoca el tag UNORDERER LIST <ul>, dentro de este van cualquier cantidad de <li> que son cada botoncito de la lista su respectiva descripcion. El <li> se abre y se cierra al igual que <ul> como cualquier otra etiqueta. 
+
+Al igual que el UL, el OL es un tag para abrir una lista ordenada, cada LI tendra un numero por defecto dependiendo de cuantos vayas agregando (1,2,3…). Funciona igual que el UL, solo que es enumerada. 
+
+Cambiando de tema. 
+
+El elemento input representa un campo de datos tipado que normalmente se asocia con un control que permite a los usuarios editar su valor. Este elemento es capaz de proveer muchos tipos diferetes de campos, de acuerdo al valor que presente en el atributo type.
+
+    • input type=hidden
+    • input type=text
+    • input type=search
+    • input type=tel
+    • input type=url
+    • input type=email
+    • input type=password
+    • input type=date
+    • input type=month
+    • input type=week
+    • input type=time
+    • input type=datetime-local
+    • input type=number
+    • input type=range
+    • input type=color
+    • input type=checkbox El elemento input, teniendo el valor "checkbox" en su atributo type, representa un control de dos estados que permite a los usuarios marcarlo como seleccionado o deseleccionado. Este control puede ser útil para recolectar información que responde a preguntas simples del estilo verdadero/falso como "¿quieres/aceptas/rechazas esto?". Es buena practica anidar los label con sus hijos (los inputs) mediante el FOR y dentro de los inputs identificarlos como hijos de este label en especifico poniendo como ID el mismo nombre que usamos en el FOR. 
+
+
+    • input type=radio:Los radio se usan para crear opciones para el usuario, son los pequeños circulitos los cuales se eligen para seleccionar una opcion en una pagina web, llenar formularios y ese tipo de cosas. 
+      El elemento label representa una etiqueta que puede ser asociada a un control de formulario, en este caso lo estamos asociando al formulario de los radio buttons para obtener informacion del usuario mediante eleccion.  Los navegadores pueden enlazar ambos elementos permitiendo que los usuarios establezcan el enfoque sobre el control al hacer clic en su etiqueta. Enfocan el clic. El label no es mas que el control del enfoque sobre el elemento editable. 
+      Existen dos formas de asociar a un elemento label con un control: insertando al texto de la etiqueta y al control dentro de label; o haciendo que coincidan los valores del atributo id en el control y del atributo for en label.
+      Osea, asi: <p><label>Nombre de usuario: <input type="text" name="usuario"></label></p> <p><label>Contraseña: <input type="password" name="pass"></label></p> 
+      o asi: <p><label for="pensamiento_id">¿Qué estás pensando?:</label></p> <p><input type="text" name="pensamiento" id="pensamiento_id"></p> 
+      En la segunda se nota como se ata el formato label mediante el ID que lleva el mismo nombre que el for en el primer label, se invoca la misma accion. 
+      Todos los radio buttons deben tener el mismo NAME para asi puedas elegir un boton al mismo tiempo y no varios. Si se pueden elegir varios, simplemente se desatan al no asignarles un name especifico. 
+      
+      
+    • input type=file
+    • input type=submit
+    • input type=image
+    • input type=reset
+    • input type=button
+
+
+
+Los input son tags self-closing. 
+
+El placeholder va dentro de la etiqueta INPUT, en este atributo ponemos entre comillas el texto que va a ir dentro del cuadrito por defecto, antes de ser editado. 
+
+Con el FORM creas una especie de formulario para obtener datos del usuario y mandarlos a un servidor que uno mismo especifica en el atributo ACTION del form. Asi: <form action="/url-where-you-want-to-submit-form-data"></form> 
+
+El tag BUTTON crea, literalmente, un boton el cual especificas su funcion mediante el atributo TYPE que le asignes. Ejemplo: Para enviar informacion a un servidor seria un boton ENVIAR, en inglés sería  submit, con el type seria: type=”submit”.
+
+Si se requiere que el campo de texto sea llenado y no se le de al boton enviar y el mismo no envie nada porque el usuario no lleno el cuadro, antes de cerra el input con el type=”text” se le pone el atributo required. 
+
+El elemento DIV no es mas que un contenedor de otra seccion de la pagina web. Y realmente no hace mucho hasta que invocado por la clase que se le asigne, se estilice con CSS. 
+
+<!DOCTYPE html>
+Esto le permite al texto, documento. Saber que estamos a punto de construir un esqueleto HTML. 
+
+Para agregar mejores capas de organizacion en el codigo, se pueden usar los tags HEAD y BODY. En el head van todos los elementos de metadata, tales como: LINK, META, TITLE, STYLE. 
+
+En el body, va todo el contenido principal de la pagina web, el cuerpo.  

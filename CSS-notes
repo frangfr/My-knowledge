@@ -1,95 +1,93 @@
-Para poder estilizar una página web se usan las propiedades (color, background, text, etc) en el CSS invocando el lugar específico a estilizar. 
+Para poder estilizar una página web se usan las propiedades (color, background, text, etc) en el CSS invocando el lugar específico a estilizar.
 
 Ejemplo: p {
 		color: red;
 
 }
 
-Para estilizar en HTML tambien se pueden usar clases. Se estilizan en el CSS (con un punto antes del nombre de la clase) y en el HTML se invocan como: Class=”el nombre que se le puso en el css”. Y esa area en especifico adopta el estilo asignado en el CSS. 
+Para estilizar en HTML tambien se pueden usar clases. Se estilizan en el CSS (con un punto antes del nombre de la clase) y en el HTML se invocan como: Class=”el nombre que se le puso en el css”. Y esa area en especifico adopta el estilo asignado en el CSS.
 
 Para controlar el tamaño de la letra se usa: Font-size. Se le da un valor en pixeles (PX).
 
-Con el Font-Family se cambia el estilo de la fuente. Se pueden importar al CSS con el @import. Eso lo explicare mas adelante. 
+Con el Font-Family se cambia el estilo de la fuente. Se pueden importar al CSS con el @import. Eso lo explicare mas adelante.
 
-Para agregar familia de fuentes se puede usar la librería de Google, que es completamente gratuita. Para ello, antes de estilizar la pagina, en HTML o CSS, se inserta el link de la fuente que queremos usar y en el “font-family” se especifica el nombre de la familia ya traida al codigo mediante el link. 
+font-family: FAMILY_NAME, GENERIC_NAME;
 
-font-family: FAMILY_NAME, GENERIC_NAME; 
+El generic name es una fuente de respaldo, en caso de que la familia invocada mediante el link, no esté disponible, la página use la segunda opcion ya especificada en el generic name.
 
-El generic name es una fuente de respaldo, en caso de que la familia invocada mediante el link, no esté disponible, la página use la segunda opcion ya especificada en el generic name. 
-
-La propiedad Width controla (en pixeles) el tamaño de un objeto. 
+La propiedad Width controla (en pixeles) el tamaño de un objeto.
 
 Combinando las propiedades anteriores, podemos crear muchas cosas, ejemplo, si antes del Color agregamos un “Border” estilizariamos entonces un borde con el color que especifiquemos. Lo mismo si le especificamos, el tamaño (border-width).
- 
+
 Se pueden agregar multiples clases a un elemento HTML simplemente poniendo una COMA entre el nombre de las clases. Ejemplo: class=” class1, class2”.
 
-La propiedad “Border-radius” le agrega, mediante la especificacion en PX, literalmente, un borde en radio, circunferencia, al borde del elemento. Tambien se puede especificar la circunferencia con porcentaje (X%). 
+La propiedad “Border-radius” le agrega, mediante la especificacion en PX, literalmente, un borde en radio, circunferencia, al borde del elemento. Tambien se puede especificar la circunferencia con porcentaje (X%).
 
 La propiedad background, dependiendo de lo que se quiera para la página, le agrega un color (o imagen, invocandola con “url()”).
 
-Los ID se pueden utilizar para estilizar un elemento en especifico, tambien se pueden usar para estilizar y modificar ciertos elementos con JavaScript. 
+Los ID se pueden utilizar para estilizar un elemento en especifico, tambien se pueden usar para estilizar y modificar ciertos elementos con JavaScript.
 
-A diferencia de las clases, los ID no son reusables para estilizar. Solo especifican el estilo de un solo elemento, por lo tanto es muy recomendable no utilizar el mismo ID para varios elementos, pues crearia problemas de logica en el codigo. Y desorganizacion para el desarrollador. 
+A diferencia de las clases, los ID no son reusables para estilizar. Solo especifican el estilo de un solo elemento, por lo tanto es muy recomendable no utilizar el mismo ID para varios elementos, pues crearia problemas de logica en el codigo. Y desorganizacion para el desarrollador.
 
 Los ID son referenciados en el <Style> o en la parte de CSS, con un # al principio. Las clases, como ya sabemos, se hace un simple punto “.”
 
-(esto es un offtopic) 
+(esto es un offtopic)
 
 Explanation of the different parts:
     • Content - The content of the box, where text and images appear
     • Padding - Clears an area around the content. The padding is transparent
     • Border - A border that goes around the padding and content
     • Margin - Clears an area outside the border. The margin is transparent
-(lo de arriba es un offtopic) 
+(lo de arriba es un offtopic)
 
-Ahora aprenderemos 3 propiedades importantes para la organizacion de los elementos HTML en la pagina web: Padding, Margin and Border. 
+Ahora aprenderemos 3 propiedades importantes para la organizacion de los elementos HTML en la pagina web: Padding, Margin and Border.
 
-Padding: Este controla la cantidad de espacio entre el objeto y el objeto base que sirve como contenedor. Cuando incrementas el padding, incrementas la distancia entre el objeto y el borde del objeto base. Crece tanto el objeto, como la base que lo contiene. Es el relleno. 
+Padding: Este controla la cantidad de espacio entre el objeto y el objeto base que sirve como contenedor. Cuando incrementas el padding, incrementas la distancia entre el objeto y el borde del objeto base. Crece tanto el objeto, como la base que lo contiene. Es el relleno.
 
- Margin: Este controla el espacio que tendra el objeto en relativo al objeto base. El padding incrementa el tamaño del objeto y la base, el margin controla que tanto espacio habrá entre el objeto base y el objeto dentro. Si el valor lo colocas negativo, el borde del elemento crecerá horizontalmente, tanto como su objeto padre e incluso puede salirse del mismo. En positivo se achica, en negativo se agranda. 
+ Margin: Este controla el espacio que tendra el objeto en relativo al objeto base. El padding incrementa el tamaño del objeto y la base, el margin controla que tanto espacio habrá entre el objeto base y el objeto dentro. Si el valor lo colocas negativo, el borde del elemento crecerá horizontalmente, tanto como su objeto padre e incluso puede salirse del mismo. En positivo se achica, en negativo se agranda.
 
-A veces, con padding-top, padding-right, padding-left y padding-bottom, podremos personalizar ese tamaño del objeto más a nuestro gusto. Se puede hacer lo mismo con el margin. 
+A veces, con padding-top, padding-right, padding-left y padding-bottom, podremos personalizar ese tamaño del objeto más a nuestro gusto. Se puede hacer lo mismo con el margin.
 
-Para simplificar un poco las cosas, podemos usar la propiedad (padding, o margin) una sola vez, y sus valores los colocamos uno al lado del otro separandolos por un espacio, en el orden de las agujas del reloj: Top, right, bottom, left. 
+Para simplificar un poco las cosas, podemos usar la propiedad (padding, o margin) una sola vez, y sus valores los colocamos uno al lado del otro separandolos por un espacio, en el orden de las agujas del reloj: Top, right, bottom, left.
 
-Asi: Padding: 20px 40px 20px 40px. 
+Asi: Padding: 20px 40px 20px 40px.
 
-Se puede estilizar con CSS tambien con un Selector de atributos. Ejemplo, un atributo type con un valor de radio, puede ser invocado en el CSS para ser estilizado de la siguiente manera: 
+Se puede estilizar con CSS tambien con un Selector de atributos. Ejemplo, un atributo type con un valor de radio, puede ser invocado en el CSS para ser estilizado de la siguiente manera:
 
 [ type=’radio’] {
-	aqui estilizamos. 
+	aqui estilizamos.
 }
 
-Hay muchas unidades de medicion en CSS, in inches, mm milimetros, px pixeles. Las unidades absolutas son referenciadas por el espacio fisico como tal (el de nuestra realidad, por decirlo asi), pero al mismo tiempo, adecuandose al espacio de la pantalla en la que se esta posicionando. 
+Hay muchas unidades de medicion en CSS, in inches, mm milimetros, px pixeles. Las unidades absolutas son referenciadas por el espacio fisico como tal (el de nuestra realidad, por decirlo asi), pero al mismo tiempo, adecuandose al espacio de la pantalla en la que se esta posicionando.
 
-Las unidades relativas, como em o rem, son relativas a otro valor predispuesto. 
+Las unidades relativas, como em o rem, son relativas a otro valor predispuesto.
 
-Con la propiedad body, se puede estilizar desde el CSS el cuerpo del HTML. 
+Con la propiedad body, se puede estilizar desde el CSS el cuerpo del HTML.
 
-Al estilizar el elemento body, hara que los demas elementos dentro del mismo y que no han sido propiamente estilizados individualmente, adoptaran los valores que hayan sido asignados en el body. 
+Al estilizar el elemento body, hara que los demas elementos dentro del mismo y que no han sido propiamente estilizados individualmente, adoptaran los valores que hayan sido asignados en el body.
 
-Al crear en el CSS una clase sobreescribira el estilo ya predicho en el body. Si se agrega otra clase debajo de la misma, la ultima es la que el codigo leera y ejecutara en la pagina web, pues el CSS lee el codigo en cascada y mientras haya otra clase abajo de otra que sobreescriba el estilo, lo hara. 
+Al crear en el CSS una clase sobreescribira el estilo ya predicho en el body. Si se agrega otra clase debajo de la misma, la ultima es la que el codigo leera y ejecutara en la pagina web, pues el CSS lee el codigo en cascada y mientras haya otra clase abajo de otra que sobreescriba el estilo, lo hara.
 
-Los ID’s hacen lo mismo que las clases si las asignas despues. Sobreescribe. 
+Los ID’s hacen lo mismo que las clases si las asignas despues. Sobreescribe.
 
-Los inline-style sobreescriben sobre todo lo anterior. 
-Usando el comando “!important” hacemos que el codigo le tome importancia a esa propiedad y sus especificaciones. 
+Los inline-style sobreescriben sobre todo lo anterior.
+Usando el comando “!important” hacemos que el codigo le tome importancia a esa propiedad y sus especificaciones.
 
-Con el codigo hexadecimal podemos insertarle colores a la pagina web con una gama de tonalidades mas especifica. 
+Con el codigo hexadecimal podemos insertarle colores a la pagina web con una gama de tonalidades mas especifica.
 
 Usando RGB hacemos lo mismo que con el hexadecimal, a diferencia que usamos un numero entre 0 y 255.
 
-Se pueden crear variables en CSS, con ellas podemos asignarlas como valor de una propiedad, a varias propiedades y asi estilizar con solo una variable, varios elementos. 
+Se pueden crear variables en CSS, con ellas podemos asignarlas como valor de una propiedad, a varias propiedades y asi estilizar con solo una variable, varios elementos.
 
-Se hace de la siguiente manera: --name-of-the-variable:  color. 
+Se hace de la siguiente manera: --name-of-the-variable:  color.
 
-Y en la propiedad se referencia asi: var(--name-of-the-variable); A este tipo de variables se le puede agregar un fallback para que al no estar disponible el valor de la variable, tenga otro por defecto. Esto se hace separando con una coma el nombre de la variable y ponerle el valor deseado despues, dentro de los parentesis. 
+Y en la propiedad se referencia asi: var(--name-of-the-variable); A este tipo de variables se le puede agregar un fallback para que al no estar disponible el valor de la variable, tenga otro por defecto. Esto se hace separando con una coma el nombre de la variable y ponerle el valor deseado despues, dentro de los parentesis.
 
-Algunos navegadores no son enteramente compatibles son CSS. Sus variables y funciones, por lo tanto siempre es buena practica crear una propiedad fallback, en caso de que tengamos problemas de compatiblidad. Esto se logra creando una propiedad mas sencilla o estilizando desde el mismo HTML… lo ultimo es una idea mia. 
+Algunos navegadores no son enteramente compatibles son CSS. Sus variables y funciones, por lo tanto siempre es buena practica crear una propiedad fallback, en caso de que tengamos problemas de compatiblidad. Esto se logra creando una propiedad mas sencilla o estilizando desde el mismo HTML… lo ultimo es una idea mia.
 
-Creando la variable :root{} en CSS, es como una variable universal, como el body del HTML. Al crear dentro de esta algunas variables del CSS y aplicando su nombre como valor en varias propiedades dentro del CSS estaremos estilizando una sola vez y poniendolo en cualquier elemento cuando queramos. Esto es, literalmente, el Cascading de CSS, al poner en root las variables universales, mediante se vaya leyendo el codigo de arriba a abajo… va estilizando segun la posicion de las variables. 
+Creando la variable :root{} en CSS, es como una variable universal, como el body del HTML. Al crear dentro de esta algunas variables del CSS y aplicando su nombre como valor en varias propiedades dentro del CSS estaremos estilizando una sola vez y poniendolo en cualquier elemento cuando queramos. Esto es, literalmente, el Cascading de CSS, al poner en root las variables universales, mediante se vaya leyendo el codigo de arriba a abajo… va estilizando segun la posicion de las variables.
 
-El media query permite hacer ciertos aspectos de la página web responsive a cualquier resolución de pantalla. De manera que, dependiendo de lo que le asignemos a las propiedades dentro del media query con la resolucion limite, hará que esos aspectos se manifiesten hasta que sobrepasen la resolucion limite. 
+El media query permite hacer ciertos aspectos de la página web responsive a cualquier resolución de pantalla. De manera que, dependiendo de lo que le asignemos a las propiedades dentro del media query con la resolucion limite, hará que esos aspectos se manifiesten hasta que sobrepasen la resolucion limite.
 
 Ejemplo: @media (max-width: 350px) {
 :root {
@@ -100,27 +98,27 @@ Ejemplo: @media (max-width: 350px) {
 }
 }
 
-La propiedad “Text-align” literalmente, alínea el texto a la manera que queramos, siendo sus valores: Justify (que justifica el texto), center, left y right. 
+La propiedad “Text-align” literalmente, alínea el texto a la manera que queramos, siendo sus valores: Justify (que justifica el texto), center, left y right.
 
 
-La propiedad WIDTH, controla, literalmente, la anchura de un elemento asignado. Su valor se refleja en PX (pixeles). 
+La propiedad WIDTH, controla, literalmente, la anchura de un elemento asignado. Su valor se refleja en PX (pixeles).
 
-La propiedad HEIGHT, controla la altura de un elemento. Igual al width, su valor es en PX. 
+La propiedad HEIGHT, controla la altura de un elemento. Igual al width, su valor es en PX.
 
-Para hacer un texto en negrita en CSS se usa la propiedad font-weight: bold. Y en HTML se usa la etiqueta <strong> al rededor de la frase que queremos resaltar con negritas. 
+Para hacer un texto en negrita en CSS se usa la propiedad font-weight: bold. Y en HTML se usa la etiqueta <strong> al rededor de la frase que queremos resaltar con negritas.
 
-Para hacer el texto delineado por debajo en CSS se usa la propiedad text-decoration: underline; 
-En HTML se usa el tag <u> al rededor de la palabra a delinear. 
+Para hacer el texto delineado por debajo en CSS se usa la propiedad text-decoration: underline;
+En HTML se usa el tag <u> al rededor de la palabra a delinear.
 
-Para enfatizar el texto se puede usar el estilo de fuente ITALICA, en CSS se usa font-style: italic; 
-En HTML se usa el tag <em> al rededor de la frase a enfatizar con el estilo curvo. 
+Para enfatizar el texto se puede usar el estilo de fuente ITALICA, en CSS se usa font-style: italic;
+En HTML se usa el tag <em> al rededor de la frase a enfatizar con el estilo curvo.
 
-Para hacer un interlineado sobre la palabra, se usa en CSS text-decoration: line-through; 
-en HTML se usa el tag <s> para el interlineado. 
+Para hacer un interlineado sobre la palabra, se usa en CSS text-decoration: line-through;
+en HTML se usa el tag <s> para el interlineado.
 
-El tag <hr> crea una linea entre elementos en el HTML. Es un tag self-closing. 
+El tag <hr> crea una linea entre elementos en el HTML. Es un tag self-closing.
 
-Es bueno darle la importancia necesario a los titulos y los subtitulos con un tamaño adecuado que indique importancia, pero no más importancia que el título. (con el font-size) 
+Es bueno darle la importancia necesario a los titulos y los subtitulos con un tamaño adecuado que indique importancia, pero no más importancia que el título. (con el font-size)
 
 (lo siguiente es otro offtopic de como calcular los pixeles de una caja modelo)
 
@@ -134,7 +132,106 @@ The total width of an element should be calculated like this:
 Total element width = width + left padding + right padding + left border + right border + left margin + right margin
 The total height of an element should be calculated like this:
 Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
- 
-(fin del offtopic) 
 
-La propiedad box-shadow aplica una o mas sombras a una propiedad. Asignando sus valores con offset-y (cuanto se extiende la sombra verticalmente) y offset-x (cuanto se extiende horizontalmente). 
+(fin del offtopic)
+
+La propiedad box-shadow aplica una o mas sombras a una propiedad. Asignando sus valores con offset-y (cuanto se extiende la sombra verticalmente) y offset-x (cuanto se extiende horizontalmente).
+
+El blur radius hace que la sombra tenga mucha mas visibilidad y brillo. El spread-radius hace que la sombra crezca mucho más.
+
+La pseudo class HOVER, le agrega estilo a un elemento al momento de posicionar el cursor sobre el elemento.
+
+La propiedad de opacity en CSS le agrega opacidad o mantiene la transparencia de un elemento.
+Siendo 1 opaco, 0.5 a la mitad y 0 completamente transparente.
+
+La propiedad text-transform cambio el estilo del estilo, siendo sus valores los siguiente:
+
+lowercase	"transform me"
+uppercase	"TRANSFORM ME"
+capitalize	"Transform Me"
+initial	"Use the default value"
+inherit	"Use the text-transform value from the parent element"
+none	"Default: Use the original text"
+
+La propiedad font-size cambia el tamaño de la fuente. Se valora en pixeles. Font-weight ajusta que tan grueso sera la fuente. Se valora en numeros normales.
+
+La propiedad line-height ajusta la cantidad de espacio entre lineas en un parrafo. Se ajusta en PX.
+
+Position: relative; Esta propiedad permite que el elemento se mueva de manera relative a la corriente normal de la pagina.
+con top, bottom, right y left; ajustamos, sea en pixeles, procentajes o em, cuanto y a donde se movera el elemento de donde esta normalmente posicionado.
+al ajustarle a la propiedad uno de estos elementos, estamos diciendole cuanto se alejara de el mismo. Ejemplo, si le decimos Top: 15px; le estamos diciendo que se aleje 15 pixeles del top.
+
+Position: absolute; Esta propiedad permite que el elemento se mueva de manera relativa al elemento con el que este anidado.
+Position: fixed; Permite que el elemento se mantenga dentro del rango visual del usuario, asi el mismo se meuva con una barra de navegacion. El elemento se movera tambien.
+
+Float: Permite mover los elementos de su corriente normal y empujarlos a la derecha o izquierda de su elemento padre anidado.
+Se usa comunmente con el elemento width para especificar horizontalmente el espacio requerido.
+
+La propiedad z-index indica el orden en el cual los elementos estaran congelados encima de otros. Debe ser un numero entero, no decimal.
+Se organiza por numeros enteros, siendo los numeros mas grande, de prioridad. Ejemplo un elemento con numero 2 se mostrara primero que uno con el valor de uno.
+
+Otra tecnica de posicionamiento es centrar un elemento bloqueado horizontalmente. Esto se hace poniendole a la propiedad margin un valor de auto.
+
+La herramienta hsl() permite que ajustemos el color de un elemento de una manera diferente:
+Cada letra es una sigla de lo que hace, HUE, SATURATION y LIGHTNESS. Las ultimas dos en procentaje.
+
+A traves de la propiedad background podemos hacer que un elemento tenga un degradado de colores en su diseño.
+con linear-gradient(gradient_direction, color1, color2, color3, ...);
+
+En gradient_direction 90deg hace un degrade vertical y 45 es angular.
+
+El repeating-linear-gradient() hace que se repita un patron especificado de degradacion.
+background: repeating-linear-gradient(
+      90deg,
+      yellow 0px,
+      blue 40px,
+      green 40px,
+      red 80px
+    );
+
+El valor en pixeles es donde se detiene un patron y comienza el siguiente.
+
+Para agregarle un background con textura a la pagina web, en el body colocamos la propiedad background
+dentro de la misma asignamos un url() que dentro tenga la direccion de la imagen que queremos como fondo.
+
+Para cambiar la escala de un elemento, usamos la propiedad Transform: scale();
+Dentro de los parentesis le asignamos en numero el tamaño deseado.
+
+Tambien se puede utilizar el hover con scale para cambiar el tamaño de un objeto al pasarle el cursor encima.
+
+Transform tambiene tiene otro elemento SkewX() y SkewY() que dobla un elemento en grados dependiendo del valor asignado.
+
+Se pueden crear formas ajustando el box-shadow y el border-radius, asi:
+
+background-color: blue;
+  border-radius: 0px;
+  box-shadow: 25px 10px 10px 10px green;
+}
+Lo de arriba es la silueta de una luna.
+
+Las pseudo-clases ::after y ::before se usan para agregar algo antes o despues de un elemento seleccionado.
+Para funcionar propiamente deben tener un contenido definido. Esta propiedad es usualmente usada para agregar photo o texto a un elemento seleccionado.
+Cuando se usan para crear figuras el contenido del elemento se queda en blanco.
+
+.heart::before {
+  content: "";
+  background-color: yellow;
+  border-radius: 25%;
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  top: -50px;
+  left: 5px;
+}
+
+En el ejemplo de arriba, elemento heart tiene un ::before lo cual crea un rectangulo amarillo con altitud y anchura de 50px y 70px.
+Tiene esquinas curveadas con un 20% de border-radius y esta en posicion absoluta, con 5px de la izquierda y 50px sobre el elemento.
+
+El transform tiene otra funcion llamada Rotate(-50deg) que rota el elemento segun los grados dados.
+
+ANIMACIONES:
+
+Las propiedades de animacion controlan como se comporta la misma. El @keyframes controla lo que sucede durante la animacion.
+La propiedad animation-name le da un nombre a la animacion que luego usada por el keyframe le dice al CSS que reglas van con cual animacion.
+
+Animation-duration 

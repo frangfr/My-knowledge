@@ -197,7 +197,7 @@ dentro de la misma asignamos un url() que dentro tenga la direccion de la imagen
 Para cambiar la escala de un elemento, usamos la propiedad Transform: scale();
 Dentro de los parentesis le asignamos en numero el tamaño deseado.
 
-Tambien se puede utilizar el hover con scale para cambiar el tamaño de un objeto al pasarle el cursor encima.
+Tambien se puede utilizar la pseudoclass hover con scale para cambiar el tamaño de un objeto al pasarle el cursor encima.
 
 Transform tambiene tiene otro elemento SkewX() y SkewY() que dobla un elemento en grados dependiendo del valor asignado.
 
@@ -212,6 +212,8 @@ Lo de arriba es la silueta de una luna.
 Las pseudo-clases ::after y ::before se usan para agregar algo antes o despues de un elemento seleccionado.
 Para funcionar propiamente deben tener un contenido definido. Esta propiedad es usualmente usada para agregar photo o texto a un elemento seleccionado.
 Cuando se usan para crear figuras el contenido del elemento se queda en blanco.
+
+a:visited, permite estilizar lo que sucedera con el link al momento de haber sido visitado por el usario.
 
 .heart::before {
   content: "";
@@ -234,4 +236,69 @@ ANIMACIONES:
 Las propiedades de animacion controlan como se comporta la misma. El @keyframes controla lo que sucede durante la animacion.
 La propiedad animation-name le da un nombre a la animacion que luego usada por el keyframe le dice al CSS que reglas van con cual animacion.
 
-Animation-duration 
+Animation-duration: Especifica la duracion de tiempo de la animacion.
+ El @keyframes controla lo que sucedera especificamente en la animacion durante su duracion. La propiedad de especificacion de frames,
+ siendo 0% el comienzo de la animacion y 100% el final. Por ejemplo podemos poner que al 50% de la animacion suceda algo.
+
+ Aqui un ejemplo en codigo:
+ #anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+}
+@keyframes colorful {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+ En el keyframes se linkea la animacion con su ID y luego dentro de el mismo se le dan los comandos de que hacer.
+
+ animation-delay: 2s;
+} Esto indica cuanto tardara la animacion en comenzar al cargar la pagina.
+
+-----------------------------------------------------------------------------
+/* Set font size for easy rem calculations
+Poner el tamañao de la fuente para calculos REM mas sencillos.
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10(aqui va lo que quiera calcular en pixeles para pasarlos a REM) = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+
+/* A few media query to set some font sizes at different screen sizes.
+Media querys para estilizar las fuentes segun la pantalla.
+
+ * This helps automate a bit of responsiveness.
+ Esto ayuda a tener un poco mas de responsibilidad.
+
+ * The trick is to use the rem unit for size values, margin and padding.
+ el truco es usar el la unidad REM para los valores de tamaños, margin y padding.
+
+ * Because rem is relative to the document font size
+ porque REM es relativo al al tamaño de la fuente del documento
+
+ * when we scale up or down the font size on the document
+ cuando subimos o bajamos el tamaño de la fuente en el documento
+
+ * it will affect all properties using rem units for the values.
+ afectará usando todas las propiedades en unidad rem para los valores.
+
+*/
+
+/* I am using the em unit for breakpoints
+estoy usando las unidad rem para puntos de quiebre.
+
+ * The calculation is the following
+ el calculo es el siguiente:
+
+ * screen size divided by browser base font size
+ tamaño de la pantalla dividido por el tamaño de la fuente base del navegador.
+
+ * As an example: a breakpoint at 980px
+ Por ejemplo, un punto de quiebre de 980 pixeles.
+
+ * 980px / 16px = 61.25em
+*/
+
+/* 1200px / 16px = 75em */
